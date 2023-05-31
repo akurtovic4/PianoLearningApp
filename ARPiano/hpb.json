@@ -1,0 +1,84 @@
+{
+
+  
+      "notes": [
+      
+    
+        {
+          "duration": 0.47999999999999954,
+          "durationTicks": 480,
+          "midi": 74,
+          "name": "D1",
+          "ticks": 4080,
+          "time": 4.08,
+          "velocity": 1.763779527559055
+        },
+        {
+          "duration": 0.7199999999999998,
+          "durationTicks": 720,
+          "midi": 72,
+          "name": "C1",
+          "ticks": 4560,
+          "time": 4.56,
+          "velocity": 1.6377952755905512
+        },
+        {
+          "duration": 0.2400000000000002,
+          "durationTicks": 240,
+          "midi": 67,
+          "name": "G1",
+          "ticks": 5280,
+          "time": 5.279999999999999,
+          "velocity": 1.889763779527559
+        },
+        {
+          "duration": 0.2400000000000002,
+          "durationTicks": 240,
+          "midi": 67,
+          "name": "G1",
+          "ticks": 5520,
+          "time": 5.52,
+          "velocity": 1.889763779527559
+        },
+        {
+          "duration": 0.4800000000000004,
+          "durationTicks": 480,
+          "midi": 79,
+          "name": "G1",
+          "ticks": 5760,
+          "time": 5.76,
+          "velocity": 1.763779527559055
+        },
+        {
+          "duration": 0.2400000000000002,
+          "durationTicks": 240,
+          "midi": 67,
+          "name": "A1",
+          "ticks": 5280,
+          "time": 5.279999999999999,
+          "velocity": 1.889763779527559
+        },
+        {
+          "duration": 0.2400000000000002,
+          "durationTicks": 240,
+          "midi": 67,
+          "name": "G1",
+          "ticks": 5280,
+          "time": 5.279999999999999,
+          "velocity": 1.889763779527559
+        },
+        {
+          "duration": 0.2400000000000002,
+          "durationTicks": 240,
+          "midi": 67,
+          "name": "H1",
+          "ticks": 5280,
+          "time": 5.279999999999999,
+          "velocity": 1.889763779527559
+        },
+      
+       
+      ]
+     
+  
+}

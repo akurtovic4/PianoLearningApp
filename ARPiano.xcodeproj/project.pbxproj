@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C6909CA2A1539B6002944D2 /* Keyboard.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1C6909C92A1539B6002944D2 /* Keyboard.rcproject */; };
+		1C6909CC2A154AD4002944D2 /* hpb.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C6909CB2A154AD4002944D2 /* hpb.json */; };
+		A0CEA8682A0D94EE002D7FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA8672A0D94EE002D7FDF /* AppDelegate.swift */; };
+		A0CEA86A2A0D94EE002D7FDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA8692A0D94EE002D7FDF /* ContentView.swift */; };
+		A0CEA86E2A0D94F2002D7FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CEA86D2A0D94F2002D7FDF /* Assets.xcassets */; };
+		A0CEA8712A0D94F2002D7FDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CEA8702A0D94F2002D7FDF /* Preview Assets.xcassets */; };
+		A0CEA87B2A0D94F2002D7FDF /* ARPianoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA87A2A0D94F2002D7FDF /* ARPianoTests.swift */; };
+		A0CEA8852A0D94F2002D7FDF /* ARPianoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA8842A0D94F2002D7FDF /* ARPianoUITests.swift */; };
+		A0CEA8872A0D94F2002D7FDF /* ARPianoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA8862A0D94F2002D7FDF /* ARPianoUITestsLaunchTests.swift */; };
+		A0CEA89A2A0D98B1002D7FDF /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA8992A0D98B1002D7FDF /* Experience.rcproject */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0CEA8772A0D94F2002D7FDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0CEA85C2A0D94EE002D7FDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0CEA8632A0D94EE002D7FDF;
+			remoteInfo = ARPiano;
+		};
+		A0CEA8812A0D94F2002D7FDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0CEA85C2A0D94EE002D7FDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0CEA8632A0D94EE002D7FDF;
+			remoteInfo = ARPiano;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C6909C92A1539B6002944D2 /* Keyboard.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Keyboard.rcproject; sourceTree = "<group>"; };
+		1C6909CB2A154AD4002944D2 /* hpb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hpb.json; sourceTree = "<group>"; };
+		A0CEA8642A0D94EE002D7FDF /* ARPiano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPiano.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0CEA8672A0D94EE002D7FDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0CEA8692A0D94EE002D7FDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A0CEA86D2A0D94F2002D7FDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0CEA8702A0D94F2002D7FDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0CEA8762A0D94F2002D7FDF /* ARPianoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARPianoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0CEA87A2A0D94F2002D7FDF /* ARPianoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPianoTests.swift; sourceTree = "<group>"; };
+		A0CEA8802A0D94F2002D7FDF /* ARPianoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARPianoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0CEA8842A0D94F2002D7FDF /* ARPianoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPianoUITests.swift; sourceTree = "<group>"; };
+		A0CEA8862A0D94F2002D7FDF /* ARPianoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPianoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0CEA8992A0D98B1002D7FDF /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0CEA8612A0D94EE002D7FDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0CEA8732A0D94F2002D7FDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0CEA87D2A0D94F2002D7FDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0CEA85B2A0D94ED002D7FDF = {
+			isa = PBXGroup;
+			children = (
+				A0CEA8662A0D94EE002D7FDF /* ARPiano */,
+				A0CEA8792A0D94F2002D7FDF /* ARPianoTests */,
+				A0CEA8832A0D94F2002D7FDF /* ARPianoUITests */,
+				A0CEA8652A0D94EE002D7FDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0CEA8652A0D94EE002D7FDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0CEA8642A0D94EE002D7FDF /* ARPiano.app */,
+				A0CEA8762A0D94F2002D7FDF /* ARPianoTests.xctest */,
+				A0CEA8802A0D94F2002D7FDF /* ARPianoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0CEA8662A0D94EE002D7FDF /* ARPiano */ = {
+			isa = PBXGroup;
+			children = (
+				1C6909CB2A154AD4002944D2 /* hpb.json */,
+				A0CEA8992A0D98B1002D7FDF /* Experience.rcproject */,
+				1C6909C92A1539B6002944D2 /* Keyboard.rcproject */,
+				A0CEA8672A0D94EE002D7FDF /* AppDelegate.swift */,
+				A0CEA8692A0D94EE002D7FDF /* ContentView.swift */,
+				A0CEA86D2A0D94F2002D7FDF /* Assets.xcassets */,
+				A0CEA86F2A0D94F2002D7FDF /* Preview Content */,
+			);
+			path = ARPiano;
+			sourceTree = "<group>";
+		};
+		A0CEA86F2A0D94F2002D7FDF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A0CEA8702A0D94F2002D7FDF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A0CEA8792A0D94F2002D7FDF /* ARPianoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0CEA87A2A0D94F2002D7FDF /* ARPianoTests.swift */,
+			);
+			path = ARPianoTests;
+			sourceTree = "<group>";
+		};
+		A0CEA8832A0D94F2002D7FDF /* ARPianoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0CEA8842A0D94F2002D7FDF /* ARPianoUITests.swift */,
+				A0CEA8862A0D94F2002D7FDF /* ARPianoUITestsLaunchTests.swift */,
+			);
+			path = ARPianoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0CEA8632A0D94EE002D7FDF /* ARPiano */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0CEA88A2A0D94F2002D7FDF /* Build configuration list for PBXNativeTarget "ARPiano" */;
+			buildPhases = (
+				A0CEA8602A0D94EE002D7FDF /* Sources */,
+				A0CEA8612A0D94EE002D7FDF /* Frameworks */,
+				A0CEA8622A0D94EE002D7FDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARPiano;
+			productName = ARPiano;
+			productReference = A0CEA8642A0D94EE002D7FDF /* ARPiano.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0CEA8752A0D94F2002D7FDF /* ARPianoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0CEA88D2A0D94F2002D7FDF /* Build configuration list for PBXNativeTarget "ARPianoTests" */;
+			buildPhases = (
+				A0CEA8722A0D94F2002D7FDF /* Sources */,
+				A0CEA8732A0D94F2002D7FDF /* Frameworks */,
+				A0CEA8742A0D94F2002D7FDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0CEA8782A0D94F2002D7FDF /* PBXTargetDependency */,
+			);
+			name = ARPianoTests;
+			productName = ARPianoTests;
+			productReference = A0CEA8762A0D94F2002D7FDF /* ARPianoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0CEA87F2A0D94F2002D7FDF /* ARPianoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0CEA8902A0D94F2002D7FDF /* Build configuration list for PBXNativeTarget "ARPianoUITests" */;
+			buildPhases = (
+				A0CEA87C2A0D94F2002D7FDF /* Sources */,
+				A0CEA87D2A0D94F2002D7FDF /* Frameworks */,
+				A0CEA87E2A0D94F2002D7FDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0CEA8822A0D94F2002D7FDF /* PBXTargetDependency */,
+			);
+			name = ARPianoUITests;
+			productName = ARPianoUITests;
+			productReference = A0CEA8802A0D94F2002D7FDF /* ARPianoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0CEA85C2A0D94EE002D7FDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					A0CEA8632A0D94EE002D7FDF = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					A0CEA8752A0D94F2002D7FDF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = A0CEA8632A0D94EE002D7FDF;
+					};
+					A0CEA87F2A0D94F2002D7FDF = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = A0CEA8632A0D94EE002D7FDF;
+					};
+				};
+			};
+			buildConfigurationList = A0CEA85F2A0D94EE002D7FDF /* Build configuration list for PBXProject "ARPiano" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0CEA85B2A0D94ED002D7FDF;
+			productRefGroup = A0CEA8652A0D94EE002D7FDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0CEA8632A0D94EE002D7FDF /* ARPiano */,
+				A0CEA8752A0D94F2002D7FDF /* ARPianoTests */,
+				A0CEA87F2A0D94F2002D7FDF /* ARPianoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0CEA8622A0D94EE002D7FDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CEA8712A0D94F2002D7FDF /* Preview Assets.xcassets in Resources */,
+				A0CEA86E2A0D94F2002D7FDF /* Assets.xcassets in Resources */,
+				1C6909CC2A154AD4002944D2 /* hpb.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0CEA8742A0D94F2002D7FDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0CEA87E2A0D94F2002D7FDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0CEA8602A0D94EE002D7FDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CEA86A2A0D94EE002D7FDF /* ContentView.swift in Sources */,
+				1C6909CA2A1539B6002944D2 /* Keyboard.rcproject in Sources */,
+				A0CEA8682A0D94EE002D7FDF /* AppDelegate.swift in Sources */,
+				A0CEA89A2A0D98B1002D7FDF /* Experience.rcproject in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0CEA8722A0D94F2002D7FDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CEA87B2A0D94F2002D7FDF /* ARPianoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0CEA87C2A0D94F2002D7FDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0CEA8852A0D94F2002D7FDF /* ARPianoUITests.swift in Sources */,
+				A0CEA8872A0D94F2002D7FDF /* ARPianoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0CEA8782A0D94F2002D7FDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0CEA8632A0D94EE002D7FDF /* ARPiano */;
+			targetProxy = A0CEA8772A0D94F2002D7FDF /* PBXContainerItemProxy */;
+		};
+		A0CEA8822A0D94F2002D7FDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0CEA8632A0D94EE002D7FDF /* ARPiano */;
+			targetProxy = A0CEA8812A0D94F2002D7FDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A0CEA8882A0D94F2002D7FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0CEA8892A0D94F2002D7FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0CEA88B2A0D94F2002D7FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ARPiano/Preview Content\"";
+				DEVELOPMENT_TEAM = NG32WDF842;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.basic.ARPiano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0CEA88C2A0D94F2002D7FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ARPiano/Preview Content\"";
+				DEVELOPMENT_TEAM = NG32WDF842;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.basic.ARPiano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0CEA88E2A0D94F2002D7FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.basic.ARPianoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARPiano.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARPiano";
+			};
+			name = Debug;
+		};
+		A0CEA88F2A0D94F2002D7FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.basic.ARPianoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARPiano.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ARPiano";
+			};
+			name = Release;
+		};
+		A0CEA8912A0D94F2002D7FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.basic.ARPianoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARPiano;
+			};
+			name = Debug;
+		};
+		A0CEA8922A0D94F2002D7FDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.basic.ARPianoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARPiano;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0CEA85F2A0D94EE002D7FDF /* Build configuration list for PBXProject "ARPiano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0CEA8882A0D94F2002D7FDF /* Debug */,
+				A0CEA8892A0D94F2002D7FDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0CEA88A2A0D94F2002D7FDF /* Build configuration list for PBXNativeTarget "ARPiano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0CEA88B2A0D94F2002D7FDF /* Debug */,
+				A0CEA88C2A0D94F2002D7FDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0CEA88D2A0D94F2002D7FDF /* Build configuration list for PBXNativeTarget "ARPianoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0CEA88E2A0D94F2002D7FDF /* Debug */,
+				A0CEA88F2A0D94F2002D7FDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0CEA8902A0D94F2002D7FDF /* Build configuration list for PBXNativeTarget "ARPianoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0CEA8912A0D94F2002D7FDF /* Debug */,
+				A0CEA8922A0D94F2002D7FDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0CEA85C2A0D94EE002D7FDF /* Project object */;
+}

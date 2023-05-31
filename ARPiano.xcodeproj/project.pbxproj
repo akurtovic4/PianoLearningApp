@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1C6909CA2A1539B6002944D2 /* Keyboard.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1C6909C92A1539B6002944D2 /* Keyboard.rcproject */; };
 		1C6909CC2A154AD4002944D2 /* hpb.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C6909CB2A154AD4002944D2 /* hpb.json */; };
+		1CEB07652A2783C6008EA2DC /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEB07642A2783C6008EA2DC /* Entity.swift */; };
+		1CEB07682A2784CD008EA2DC /* MidiFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEB07672A2784CD008EA2DC /* MidiFile.swift */; };
+		1CEB076A2A27873D008EA2DC /* PianoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEB07692A27873D008EA2DC /* PianoViewModel.swift */; };
+		1CEB076E2A278CA2008EA2DC /* MidiParser in Frameworks */ = {isa = PBXBuildFile; productRef = 1CEB076D2A278CA2008EA2DC /* MidiParser */; };
 		A0CEA8682A0D94EE002D7FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA8672A0D94EE002D7FDF /* AppDelegate.swift */; };
 		A0CEA86A2A0D94EE002D7FDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA8692A0D94EE002D7FDF /* ContentView.swift */; };
 		A0CEA86E2A0D94F2002D7FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CEA86D2A0D94F2002D7FDF /* Assets.xcassets */; };
@@ -39,6 +43,9 @@
 /* Begin PBXFileReference section */
 		1C6909C92A1539B6002944D2 /* Keyboard.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Keyboard.rcproject; sourceTree = "<group>"; };
 		1C6909CB2A154AD4002944D2 /* hpb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hpb.json; sourceTree = "<group>"; };
+		1CEB07642A2783C6008EA2DC /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		1CEB07672A2784CD008EA2DC /* MidiFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiFile.swift; sourceTree = "<group>"; };
+		1CEB07692A27873D008EA2DC /* PianoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoViewModel.swift; sourceTree = "<group>"; };
 		A0CEA8642A0D94EE002D7FDF /* ARPiano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARPiano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CEA8672A0D94EE002D7FDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0CEA8692A0D94EE002D7FDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CEB076E2A278CA2008EA2DC /* MidiParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +85,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CEB07632A278398008EA2DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1CEB07642A2783C6008EA2DC /* Entity.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1CEB07662A2784BA008EA2DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1CEB07672A2784CD008EA2DC /* MidiFile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1CEB076B2A278B3A008EA2DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A0CEA85B2A0D94ED002D7FDF = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +131,10 @@
 		A0CEA8662A0D94EE002D7FDF /* ARPiano */ = {
 			isa = PBXGroup;
 			children = (
+				1CEB076B2A278B3A008EA2DC /* Resources */,
+				1CEB07692A27873D008EA2DC /* PianoViewModel.swift */,
+				1CEB07662A2784BA008EA2DC /* Models */,
+				1CEB07632A278398008EA2DC /* Extensions */,
 				1C6909CB2A154AD4002944D2 /* hpb.json */,
 				A0CEA8992A0D98B1002D7FDF /* Experience.rcproject */,
 				1C6909C92A1539B6002944D2 /* Keyboard.rcproject */,
@@ -152,6 +187,9 @@
 			dependencies = (
 			);
 			name = ARPiano;
+			packageProductDependencies = (
+				1CEB076D2A278CA2008EA2DC /* MidiParser */,
+			);
 			productName = ARPiano;
 			productReference = A0CEA8642A0D94EE002D7FDF /* ARPiano.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +262,9 @@
 				Base,
 			);
 			mainGroup = A0CEA85B2A0D94ED002D7FDF;
+			packageReferences = (
+				1CEB076C2A278CA2008EA2DC /* XCRemoteSwiftPackageReference "MidiParser" */,
+			);
 			productRefGroup = A0CEA8652A0D94EE002D7FDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -268,8 +309,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0CEA86A2A0D94EE002D7FDF /* ContentView.swift in Sources */,
+				1CEB07652A2783C6008EA2DC /* Entity.swift in Sources */,
+				1CEB076A2A27873D008EA2DC /* PianoViewModel.swift in Sources */,
 				1C6909CA2A1539B6002944D2 /* Keyboard.rcproject in Sources */,
 				A0CEA8682A0D94EE002D7FDF /* AppDelegate.swift in Sources */,
+				1CEB07682A2784CD008EA2DC /* MidiFile.swift in Sources */,
 				A0CEA89A2A0D98B1002D7FDF /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,6 +639,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1CEB076C2A278CA2008EA2DC /* XCRemoteSwiftPackageReference "MidiParser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/matsune/MidiParser";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CEB076D2A278CA2008EA2DC /* MidiParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CEB076C2A278CA2008EA2DC /* XCRemoteSwiftPackageReference "MidiParser" */;
+			productName = MidiParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0CEA85C2A0D94EE002D7FDF /* Project object */;
 }

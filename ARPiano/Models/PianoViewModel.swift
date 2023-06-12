@@ -10,7 +10,8 @@ import RealityKit
 import UIKit
 
 class PianoViewModel : ObservableObject{
-    
+
+    @Published var isModalPresented = true
     
     func startTimer(arView:  ARView) {
         guard let jsonData = MidiFile.getJSONData() else {
@@ -75,7 +76,9 @@ class PianoViewModel : ObservableObject{
         }
     }
     
-    
+    func dismissModal() {
+           isModalPresented = false
+       }
     
 }
 

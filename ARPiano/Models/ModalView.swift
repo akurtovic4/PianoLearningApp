@@ -9,7 +9,13 @@ import Foundation
 import SwiftUI
 
 struct ModalView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    @State private var isStartPressed = false
     var dismissAction: () -> Void
+    
+    
+    
     
     var body: some View {
         ZStack {
@@ -21,8 +27,9 @@ struct ModalView: View {
                 Text("PianoLearningApp")
                     .font(.title)
                     .padding()
+                    .foregroundColor(Color.black)
                 
-                Text("After you press Start playing button, adjust virtual keyboard to your RL keyboard and press play. After 10 sec, proper keys will turn purple.")
+                Text("After you press the -Start playing- button, adjust virtual keyboard to your RL keyboard and press play. After 10 sec, proper keys will turn purple.")
                     .font(.footnote)
                     .italic()
                     .padding()
@@ -34,7 +41,7 @@ struct ModalView: View {
                     Text("Start playing")
                         .font(.headline)
                         .padding()
-                        .background(Color.purple)
+                        .background(Color.black)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
@@ -42,4 +49,6 @@ struct ModalView: View {
             }
         }
     }
+    
 }
+   

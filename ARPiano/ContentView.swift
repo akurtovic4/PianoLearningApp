@@ -12,7 +12,48 @@ struct ContentView : View {
     @State private var isPlaying = false
     @State private var isModalPresented = true
     
-    
+    var body: some View {
+            ZStack {
+                ARViewContainer(arView: $arView)
+                    .edgesIgnoringSafeArea(.all)
+                
+                if isModalPresented {
+                    ModalView(dismissAction: {
+                        isModalPresented = false
+                    })
+                }
+                
+                if !isModalPresented && !isPlaying {
+                    Button(action: {
+                        isPlaying = true
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                            viewModel.startTimer(arView: arView)
+                        }
+                    }) {
+                        Image(systemName: "play.circle.fill")
+                            .resizable()
+                            .frame(width: 80, height: 80)
+                            .foregroundColor(.purple)
+                    }
+                    .padding()
+                    .transition(.opacity)
+                    .opacity(isModalPresented ? 0 : 1) // Show the play button only if the modal is not presented
+                    .animation(.easeIn(duration: 0.5)) // Add animation for smooth visibility transition
+                }
+            }
+            .onAppear {
+                let converter = MIDIConverter()
+                if let jsonString = converter.convertMIDIToJSON(fileName: "your_midi_file_name") {
+                    print(jsonString)
+                } else {
+                    print("Failed to convert MIDI to JSON.")
+                }
+            }
+            
+        }
+  }
+   
+    /*
     var body: some View {
             ZStack {
                 ARViewContainer(arView: $arView)
@@ -81,7 +122,7 @@ struct ContentView : View {
             )
         }
     }
-   
+   */
     
    /* var body: some View {
         ARViewContainer(arView: $arView)

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C6909CA2A1539B6002944D2 /* Keyboard.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1C6909C92A1539B6002944D2 /* Keyboard.rcproject */; };
 		1C6909CC2A154AD4002944D2 /* hpb.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C6909CB2A154AD4002944D2 /* hpb.json */; };
+		1CC1B67B2A3730B40021A3D7 /* easymid.mid in Resources */ = {isa = PBXBuildFile; fileRef = 1CC1B67A2A3730B40021A3D7 /* easymid.mid */; };
+		1CC1B67D2A37324F0021A3D7 /* MIDIConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1B67C2A37324F0021A3D7 /* MIDIConverter.swift */; };
 		1CEB07652A2783C6008EA2DC /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEB07642A2783C6008EA2DC /* Entity.swift */; };
 		1CEB07682A2784CD008EA2DC /* MidiFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEB07672A2784CD008EA2DC /* MidiFile.swift */; };
 		1CEB076A2A27873D008EA2DC /* PianoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEB07692A27873D008EA2DC /* PianoViewModel.swift */; };
@@ -43,6 +45,8 @@
 /* Begin PBXFileReference section */
 		1C6909C92A1539B6002944D2 /* Keyboard.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Keyboard.rcproject; sourceTree = "<group>"; };
 		1C6909CB2A154AD4002944D2 /* hpb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hpb.json; sourceTree = "<group>"; };
+		1CC1B67A2A3730B40021A3D7 /* easymid.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = easymid.mid; sourceTree = "<group>"; };
+		1CC1B67C2A37324F0021A3D7 /* MIDIConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIConverter.swift; sourceTree = "<group>"; };
 		1CEB07642A2783C6008EA2DC /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		1CEB07672A2784CD008EA2DC /* MidiFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiFile.swift; sourceTree = "<group>"; };
 		1CEB07692A27873D008EA2DC /* PianoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoViewModel.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 		1CEB076B2A278B3A008EA2DC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1CC1B67A2A3730B40021A3D7 /* easymid.mid */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 				A0CEA8692A0D94EE002D7FDF /* ContentView.swift */,
 				A0CEA86D2A0D94F2002D7FDF /* Assets.xcassets */,
 				A0CEA86F2A0D94F2002D7FDF /* Preview Content */,
+				1CC1B67C2A37324F0021A3D7 /* MIDIConverter.swift */,
 			);
 			path = ARPiano;
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 				A0CEA8712A0D94F2002D7FDF /* Preview Assets.xcassets in Resources */,
 				A0CEA86E2A0D94F2002D7FDF /* Assets.xcassets in Resources */,
 				1C6909CC2A154AD4002944D2 /* hpb.json in Resources */,
+				1CC1B67B2A3730B40021A3D7 /* easymid.mid in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0CEA86A2A0D94EE002D7FDF /* ContentView.swift in Sources */,
+				1CC1B67D2A37324F0021A3D7 /* MIDIConverter.swift in Sources */,
 				1CEB07652A2783C6008EA2DC /* Entity.swift in Sources */,
 				1CEB076A2A27873D008EA2DC /* PianoViewModel.swift in Sources */,
 				1C6909CA2A1539B6002944D2 /* Keyboard.rcproject in Sources */,
@@ -476,6 +484,7 @@
 				DEVELOPMENT_TEAM = NG32WDF842;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "JelaKršić";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -507,6 +516,7 @@
 				DEVELOPMENT_TEAM = NG32WDF842;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "JelaKršić";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

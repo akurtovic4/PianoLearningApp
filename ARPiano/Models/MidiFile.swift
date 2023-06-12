@@ -7,6 +7,9 @@
 
 import Foundation
 
+
+
+
 struct MidiFile: Decodable {
   let notes: [Keys]
     
@@ -38,4 +41,4 @@ struct Keys: Codable {
   let velocity: Double
 
 }
-
+ 

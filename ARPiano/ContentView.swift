@@ -55,113 +55,7 @@ struct ContentView : View {
         }
   }
    
-    /*
-    var body: some View {
-            ZStack {
-                ARViewContainer(arView: $arView)
-                    .edgesIgnoringSafeArea(.all)
-                
-                if isModalPresented {
-                    ModalView(dismissAction: {
-                        isModalPresented = false
-                    })
-                }
-                
-                if !isModalPresented && !isPlaying {
-                    Button(action: {
-                        isPlaying = true
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
-                            viewModel.startTimer(arView: arView)
-                        }
-                    }) {
-                        Image(systemName: "play.circle.fill")
-                            .resizable()
-                            .frame(width: 80, height: 80)
-                            .foregroundColor(.purple)
-                    }
-                    .padding()
-                    .transition(.opacity)
-                    .opacity(0) // Initially hide the play button
-                    .animation(.easeIn(duration: 0.5)) // Add animation for smooth visibility transition
-                    .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                            withAnimation {
-                                // Show the play button after a small delay
-                                isPlaying = false
-                            }
-                        }
-                    }
-                }
-            }
-            .onAppear {
-                let converter = MIDIConverter()
-                if let jsonString = converter.convertMIDIToJSON(fileName: "your_midi_file_name") {
-                    print(jsonString)
-                } else {
-                    print("Failed to convert MIDI to JSON.")
-                }
-            }
-            .overlay(
-                Group {
-                    if !isPlaying {
-                        Button(action: {
-                            isPlaying = true
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
-                                viewModel.startTimer(arView: arView)
-                            }
-                        }) {
-                            Image(systemName: "play.circle.fill")
-                                .resizable()
-                                .frame(width: 80, height: 80)
-                                .foregroundColor(.purple)
-                        }
-                        .padding()
-                        .transition(.opacity)
-                    }
-                }
-                .zIndex(1),
-                alignment: .bottom
-            )
-        }
-    }
-   */
-    
-   /* var body: some View {
-        ARViewContainer(arView: $arView)
-            .edgesIgnoringSafeArea(.all)
-        
-            .onAppear{
-               // viewModel.startTimer(arView: arView) //changingColors
-                let converter = MIDIConverter()
-                                if let jsonString = converter.convertMIDIToJSON(fileName: "your_midi_file_name") {
-                                    print(jsonString)
-                                } else {
-                                    print("Failed to convert MIDI to JSON.")
-                                }
-            }
-        if !isPlaying {
-            Button(action: {
-                isPlaying = true
-                DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
-                    viewModel.startTimer(arView: arView)
-                }
-            }) {
-                          Image(systemName: "play.circle.fill")
-                              .resizable()
-                              .frame(width: 80, height: 80)
-                              .foregroundColor(.purple)
-                      }
-                      .padding()
-                      .transition(.opacity)
-                  }
-        
-    }
-    
-    
-    
-    
-}
-*/
+ 
 
 
 struct ARViewContainer: UIViewRepresentable {
@@ -189,8 +83,7 @@ struct ARViewContainer: UIViewRepresentable {
         let pianoAnchor = try! Experience.loadPiano()
     
         
-        // Attach the finger entity as a child of piano
-        // pianoAnchor.addChild(fingerEntity)
+      
         
         
         // Add the box anchor to the scene

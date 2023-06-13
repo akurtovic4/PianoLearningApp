@@ -21,13 +21,13 @@ class MIDIConverter {
             print("MIDI file not found.")
             return nil
         }
-        
+
         // Read the MIDI file data
         guard let data = try? Data(contentsOf: URL(fileURLWithPath: path)) else {
             print("Failed to read MIDI file data.")
             return nil
         }
-        
+
         // MIDI file format: MThd + <header chunk length> + <header data> + MTrk + <track chunk length> + <track data> + ...
         
         // Check if it's a valid MIDI file
@@ -63,24 +63,38 @@ class MIDIConverter {
             index += 8 + trackLength
         }
         
-        let jsonData: [String: Any] = ["notes": notes]
+        let midiFileMid = MidiFileMid(notes: notes)
         
-        // Convert JSON data to a string
-        guard let jsonDataString = try? JSONSerialization.data(withJSONObject: jsonData, options: []),
-              let jsonString = String(data: jsonDataString, encoding: .utf8) else {
-            print("Failed to convert JSON data to string.")
+        // Convert the MIDI file structure to JSON data
+        guard let jsonData = try? JSONEncoder().encode(midiFileMid) else {
+            print("Failed to encode MIDI data to JSON.")
             return nil
         }
         
-        // Return the JSON string
-        return jsonString
+        // Save JSON data to a file
+        let jsonFileName = "output.json"
+        let jsonFilePath = getDocumentsDirectory().appendingPathComponent(jsonFileName)
         
+        do {
+            try jsonData.write(to: jsonFilePath)
+            print("JSON file saved successfully: \(jsonFilePath)")
+        } catch {
+            print("Failed to save JSON file: \(error)")
+            return nil
+        }
         
-        
+        // Return the path of the JSON file
+        return jsonFilePath.absoluteString
     }
     
+    private func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    
+    
     private func processTrackData(_ data: Data, notes: inout [Note]) {
-   /*     var deltaTime: UInt64 = 0
+        var deltaTime: UInt64 = 0
         var currentIndex = 0
         
         let dataBytes = [UInt8](data)
@@ -130,7 +144,7 @@ class MIDIConverter {
             
             currentIndex += 1
         }
-    */
+    
     }
 
     private func parseVariableLengthQuantity(_ data: [UInt8], startIndex: Int) -> (UInt64, Int) {

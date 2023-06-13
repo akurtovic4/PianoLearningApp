@@ -143,59 +143,6 @@ func changingColors(arView: ARView) {
 */
 
 
-/*
-   
-    func changingColors() {
-        guard let jsonData = getJSONData() else {
-            print("Failed to load JSON data.")
-            return
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
-            var currentIndex = 0
-            
-            Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
-                guard currentIndex < jsonData.notes.count else {
-                    timer.invalidate()
-                    print("All key color changes completed.")
-                    return
-                }
-                
-                let note = jsonData.notes[currentIndex]
-                
-                guard let keyEntity = arView.scene.findEntity(named: note.name) else {
-                    print("Failed to find the key entity for note: \(note.name).")
-                    currentIndex += 1
-                    return
-                }
-                
-                guard let modelEntity = keyEntity.getModelEntity() else {
-                    print("Failed to find ModelEntity for note: \(note.name).")
-                    currentIndex += 1
-                    return
-                }
-                
-                var material = SimpleMaterial()
-                let color = UIColor.purple // Set the desired color for the key
-                material.baseColor = .color(color)
-                modelEntity.model?.materials[0] = material
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + note.duration) {
-                    var nextMaterial = SimpleMaterial()
-                   
-                    func changeTo(_ element: Int, _ color: UIColor) {
-                        modelEntity.model?.materials[0] = UnlitMaterial(color: color)
-                       }
-                    changeTo(currentIndex, .white)//mesh c
-                  //  nextMaterial.baseColor = .color(.white)
-                    modelEntity.model?.materials[0] = nextMaterial
-                    currentIndex += 1
-                }
-                
-                
-            }
-        }
-    }
 
   
-  */
+

@@ -102,6 +102,7 @@
 		1CEB07662A2784BA008EA2DC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1CC1B67C2A37324F0021A3D7 /* MIDIConverter.swift */,
 				1CEB07672A2784CD008EA2DC /* MidiFile.swift */,
 				1CEB07692A27873D008EA2DC /* PianoViewModel.swift */,
 				1C65DF012A3774BF00D73EC1 /* ModalView.swift */,
@@ -140,17 +141,16 @@
 		A0CEA8662A0D94EE002D7FDF /* ARPiano */ = {
 			isa = PBXGroup;
 			children = (
+				1C6909CB2A154AD4002944D2 /* hpb.json */,
 				1CEB076B2A278B3A008EA2DC /* Resources */,
 				1CEB07662A2784BA008EA2DC /* Models */,
 				1CEB07632A278398008EA2DC /* Extensions */,
-				1C6909CB2A154AD4002944D2 /* hpb.json */,
 				A0CEA8992A0D98B1002D7FDF /* Experience.rcproject */,
 				1C6909C92A1539B6002944D2 /* Keyboard.rcproject */,
 				A0CEA8672A0D94EE002D7FDF /* AppDelegate.swift */,
 				A0CEA8692A0D94EE002D7FDF /* ContentView.swift */,
 				A0CEA86D2A0D94F2002D7FDF /* Assets.xcassets */,
 				A0CEA86F2A0D94F2002D7FDF /* Preview Content */,
-				1CC1B67C2A37324F0021A3D7 /* MIDIConverter.swift */,
 			);
 			path = ARPiano;
 			sourceTree = "<group>";
@@ -488,7 +488,7 @@
 				DEVELOPMENT_TEAM = NG32WDF842;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "JelaKršić";
+				INFOPLIST_KEY_CFBundleDisplayName = PianoPlay;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -520,7 +520,7 @@
 				DEVELOPMENT_TEAM = NG32WDF842;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "JelaKršić";
+				INFOPLIST_KEY_CFBundleDisplayName = PianoPlay;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

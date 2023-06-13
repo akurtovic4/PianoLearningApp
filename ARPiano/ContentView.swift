@@ -12,6 +12,8 @@ struct ContentView : View {
     @State private var isPlaying = false
     @State private var isModalPresented = true
     
+    
+    
     var body: some View {
             ZStack {
                 ARViewContainer(arView: $arView)
@@ -33,7 +35,7 @@ struct ContentView : View {
                         Image(systemName: "play.circle.fill")
                             .resizable()
                             .frame(width: 80, height: 80)
-                            .foregroundColor(.purple)
+                            .foregroundColor(.black)
                     }
                     .padding()
                     .transition(.opacity)
@@ -43,7 +45,7 @@ struct ContentView : View {
             }
             .onAppear {
                 let converter = MIDIConverter()
-                if let jsonString = converter.convertMIDIToJSON(fileName: "your_midi_file_name") {
+                if let jsonString = converter.convertMIDIToJSON(fileName: "easymid") {
                     print(jsonString)
                 } else {
                     print("Failed to convert MIDI to JSON.")

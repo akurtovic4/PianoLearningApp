@@ -186,7 +186,7 @@ struct ARViewContainer: UIViewRepresentable {
         arView.session.run(config)
         
         // Load the "Piano" scene from the "Experience" Reality File
-        let pianoAnchor = try! Keyboard.loadPiano()
+        let pianoAnchor = try! Experience.loadPiano()
     
         
         // Attach the finger entity as a child of piano
@@ -204,8 +204,7 @@ struct ARViewContainer: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {
-        // Update the finger positions in the 3D model
-        // ...
+       
     }
     
     func makeCoordinator() -> Coordinator {

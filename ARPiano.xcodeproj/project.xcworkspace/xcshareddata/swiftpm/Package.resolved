@@ -3,10 +3,10 @@
     {
       "identity" : "midiparser",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/matsune/MidiParser",
+      "location" : "https://github.com/akurtovic4/MidiParser",
       "state" : {
         "branch" : "master",
-        "revision" : "1ae510bde5327156619ddee992c5dbbe0afa359f"
+        "revision" : "351e73f975fa3518fa916e8a40e081c145e02f6b"
       }
     }
   ],

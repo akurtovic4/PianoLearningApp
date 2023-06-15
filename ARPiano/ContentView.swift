@@ -45,7 +45,7 @@ struct ContentView : View {
             }
             .onAppear {
                 let converter = MIDIConverter()
-                if let jsonString = converter.convertMIDIToJSON(fileName: "easymid") {
+                if let jsonString = converter.loadMidi(fileName: "easymid") {
                     print(jsonString)
                 } else {
                     print("Failed to convert MIDI to JSON.")

@@ -1,4 +1,5 @@
 import Foundation
+import MidiParser
 
 struct MidiFileMid: Codable {
     let notes: [Note]
@@ -15,6 +16,24 @@ struct Note: Codable {
 }
 
 class MIDIConverter {
+    func loadMidi(fileName: String) -> [MidiNote]? {
+        let midi = MidiData()
+        guard let path = Bundle.main.path(forResource: fileName, ofType: "mid") else {
+            print("MIDI file not found.")
+            return []
+        }
+
+        // Read the MIDI file data
+        guard let data = try? Data(contentsOf: URL(fileURLWithPath: path)) else {
+            print("Failed to read MIDI file data.")
+            return []
+        }
+        
+        midi.load(data: data)
+        let midiNote = midi.noteTracks.first?.notes(from: .zero, to: .infinity)
+        return midiNote
+    }
+    
     func convertMIDIToJSON(fileName: String) -> String? {
         // Get the path of the MIDI file
         guard let path = Bundle.main.path(forResource: fileName, ofType: "mid") else {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C44A1EE2A3B335C004FA5BE /* MidiParser in Frameworks */ = {isa = PBXBuildFile; productRef = 1C44A1ED2A3B335C004FA5BE /* MidiParser */; };
+		1C44A1F02A3B5BEB004FA5BE /* proba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C44A1EF2A3B5BEB004FA5BE /* proba.swift */; };
+		1C44A1F22A3B68AE004FA5BE /* proba2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C44A1F12A3B68AE004FA5BE /* proba2.swift */; };
 		1C65DF022A3774BF00D73EC1 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C65DF012A3774BF00D73EC1 /* ModalView.swift */; };
 		1C6909CA2A1539B6002944D2 /* Keyboard.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1C6909C92A1539B6002944D2 /* Keyboard.rcproject */; };
 		1C6909CC2A154AD4002944D2 /* hpb.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C6909CB2A154AD4002944D2 /* hpb.json */; };
@@ -15,7 +18,6 @@
 		1CEB07652A2783C6008EA2DC /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEB07642A2783C6008EA2DC /* Entity.swift */; };
 		1CEB07682A2784CD008EA2DC /* MidiFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEB07672A2784CD008EA2DC /* MidiFile.swift */; };
 		1CEB076A2A27873D008EA2DC /* PianoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEB07692A27873D008EA2DC /* PianoViewModel.swift */; };
-		1CEB076E2A278CA2008EA2DC /* MidiParser in Frameworks */ = {isa = PBXBuildFile; productRef = 1CEB076D2A278CA2008EA2DC /* MidiParser */; };
 		A0CEA8682A0D94EE002D7FDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA8672A0D94EE002D7FDF /* AppDelegate.swift */; };
 		A0CEA86A2A0D94EE002D7FDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA8692A0D94EE002D7FDF /* ContentView.swift */; };
 		A0CEA86E2A0D94F2002D7FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CEA86D2A0D94F2002D7FDF /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C44A1EF2A3B5BEB004FA5BE /* proba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proba.swift; sourceTree = "<group>"; };
+		1C44A1F12A3B68AE004FA5BE /* proba2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proba2.swift; sourceTree = "<group>"; };
 		1C65DF012A3774BF00D73EC1 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		1C6909C92A1539B6002944D2 /* Keyboard.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Keyboard.rcproject; sourceTree = "<group>"; };
 		1C6909CB2A154AD4002944D2 /* hpb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hpb.json; sourceTree = "<group>"; };
@@ -70,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CEB076E2A278CA2008EA2DC /* MidiParser in Frameworks */,
+				1C44A1EE2A3B335C004FA5BE /* MidiParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +110,8 @@
 				1CEB07672A2784CD008EA2DC /* MidiFile.swift */,
 				1CEB07692A27873D008EA2DC /* PianoViewModel.swift */,
 				1C65DF012A3774BF00D73EC1 /* ModalView.swift */,
+				1C44A1EF2A3B5BEB004FA5BE /* proba.swift */,
+				1C44A1F12A3B68AE004FA5BE /* proba2.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,7 +203,7 @@
 			);
 			name = ARPiano;
 			packageProductDependencies = (
-				1CEB076D2A278CA2008EA2DC /* MidiParser */,
+				1C44A1ED2A3B335C004FA5BE /* MidiParser */,
 			);
 			productName = ARPiano;
 			productReference = A0CEA8642A0D94EE002D7FDF /* ARPiano.app */;
@@ -272,7 +278,7 @@
 			);
 			mainGroup = A0CEA85B2A0D94ED002D7FDF;
 			packageReferences = (
-				1CEB076C2A278CA2008EA2DC /* XCRemoteSwiftPackageReference "MidiParser" */,
+				1C44A1EC2A3B335C004FA5BE /* XCRemoteSwiftPackageReference "MidiParser" */,
 			);
 			productRefGroup = A0CEA8652A0D94EE002D7FDF /* Products */;
 			projectDirPath = "";
@@ -322,10 +328,12 @@
 				1CC1B67D2A37324F0021A3D7 /* MIDIConverter.swift in Sources */,
 				1CEB07652A2783C6008EA2DC /* Entity.swift in Sources */,
 				1CEB076A2A27873D008EA2DC /* PianoViewModel.swift in Sources */,
+				1C44A1F22A3B68AE004FA5BE /* proba2.swift in Sources */,
 				1C6909CA2A1539B6002944D2 /* Keyboard.rcproject in Sources */,
 				A0CEA8682A0D94EE002D7FDF /* AppDelegate.swift in Sources */,
 				1C65DF022A3774BF00D73EC1 /* ModalView.swift in Sources */,
 				1CEB07682A2784CD008EA2DC /* MidiFile.swift in Sources */,
+				1C44A1F02A3B5BEB004FA5BE /* proba.swift in Sources */,
 				A0CEA89A2A0D98B1002D7FDF /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,9 +663,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1CEB076C2A278CA2008EA2DC /* XCRemoteSwiftPackageReference "MidiParser" */ = {
+		1C44A1EC2A3B335C004FA5BE /* XCRemoteSwiftPackageReference "MidiParser" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/matsune/MidiParser";
+			repositoryURL = "https://github.com/akurtovic4/MidiParser";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -666,9 +674,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1CEB076D2A278CA2008EA2DC /* MidiParser */ = {
+		1C44A1ED2A3B335C004FA5BE /* MidiParser */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1CEB076C2A278CA2008EA2DC /* XCRemoteSwiftPackageReference "MidiParser" */;
+			package = 1C44A1EC2A3B335C004FA5BE /* XCRemoteSwiftPackageReference "MidiParser" */;
 			productName = MidiParser;
 		};
 /* End XCSwiftPackageProductDependency section */

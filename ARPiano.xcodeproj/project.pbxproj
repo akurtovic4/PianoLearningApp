@@ -10,6 +10,8 @@
 		1C44A1EE2A3B335C004FA5BE /* MidiParser in Frameworks */ = {isa = PBXBuildFile; productRef = 1C44A1ED2A3B335C004FA5BE /* MidiParser */; };
 		1C44A1F02A3B5BEB004FA5BE /* proba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C44A1EF2A3B5BEB004FA5BE /* proba.swift */; };
 		1C44A1F22A3B68AE004FA5BE /* proba2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C44A1F12A3B68AE004FA5BE /* proba2.swift */; };
+		1C44A1F42A3B6F00004FA5BE /* proba3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C44A1F32A3B6F00004FA5BE /* proba3.swift */; };
+		1C44A1F62A3B7959004FA5BE /* easymid2.mid in Resources */ = {isa = PBXBuildFile; fileRef = 1C44A1F52A3B7958004FA5BE /* easymid2.mid */; };
 		1C65DF022A3774BF00D73EC1 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C65DF012A3774BF00D73EC1 /* ModalView.swift */; };
 		1C6909CA2A1539B6002944D2 /* Keyboard.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1C6909C92A1539B6002944D2 /* Keyboard.rcproject */; };
 		1C6909CC2A154AD4002944D2 /* hpb.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C6909CB2A154AD4002944D2 /* hpb.json */; };
@@ -48,6 +50,8 @@
 /* Begin PBXFileReference section */
 		1C44A1EF2A3B5BEB004FA5BE /* proba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proba.swift; sourceTree = "<group>"; };
 		1C44A1F12A3B68AE004FA5BE /* proba2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proba2.swift; sourceTree = "<group>"; };
+		1C44A1F32A3B6F00004FA5BE /* proba3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proba3.swift; sourceTree = "<group>"; };
+		1C44A1F52A3B7958004FA5BE /* easymid2.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = easymid2.mid; sourceTree = "<group>"; };
 		1C65DF012A3774BF00D73EC1 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		1C6909C92A1539B6002944D2 /* Keyboard.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Keyboard.rcproject; sourceTree = "<group>"; };
 		1C6909CB2A154AD4002944D2 /* hpb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hpb.json; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 				1C65DF012A3774BF00D73EC1 /* ModalView.swift */,
 				1C44A1EF2A3B5BEB004FA5BE /* proba.swift */,
 				1C44A1F12A3B68AE004FA5BE /* proba2.swift */,
+				1C44A1F32A3B6F00004FA5BE /* proba3.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				1CC1B67A2A3730B40021A3D7 /* easymid.mid */,
+				1C44A1F52A3B7958004FA5BE /* easymid2.mid */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 				A0CEA86E2A0D94F2002D7FDF /* Assets.xcassets in Resources */,
 				1C6909CC2A154AD4002944D2 /* hpb.json in Resources */,
 				1CC1B67B2A3730B40021A3D7 /* easymid.mid in Resources */,
+				1C44A1F62A3B7959004FA5BE /* easymid2.mid in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +333,7 @@
 			files = (
 				A0CEA86A2A0D94EE002D7FDF /* ContentView.swift in Sources */,
 				1CC1B67D2A37324F0021A3D7 /* MIDIConverter.swift in Sources */,
+				1C44A1F42A3B6F00004FA5BE /* proba3.swift in Sources */,
 				1CEB07652A2783C6008EA2DC /* Entity.swift in Sources */,
 				1CEB076A2A27873D008EA2DC /* PianoViewModel.swift in Sources */,
 				1C44A1F22A3B68AE004FA5BE /* proba2.swift in Sources */,

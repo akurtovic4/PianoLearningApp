@@ -1,5 +1,5 @@
 //
-//
+//  proba3.swift
 //  ARPiano
 //
 //  Created by Amina Kurtović on 15. 6. 2023..
@@ -11,7 +11,7 @@
 //
 //  Created by Amina Kurtović on 31. 5. 2023..
 //
-
+/*
 import Foundation
 import RealityKit
 import UIKit
@@ -23,7 +23,7 @@ class PianoViewModel : ObservableObject{
  
     
     func startTimer(arView: ARView) {
-        let midiNotes = MIDIConverter().loadMidi(fileName: "easymid2")
+        let midiNotes = MIDIConverter().loadMidi(fileName: "easymid")
         var currentIndex = 0
 
         var numOfNotes = 0
@@ -34,9 +34,10 @@ class PianoViewModel : ObservableObject{
             return
         }
 
-        func playNextNote() {
+ let durationInSeconds = midiNotes?[currentIndex].duration.inSeconds ?? 0.0
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             guard currentIndex < numOfNotes else {
-                print(midiNotes)
+                timer.invalidate()
                 print("All key color changes completed.")
                 return
             }
@@ -44,7 +45,6 @@ class PianoViewModel : ObservableObject{
             guard let note = midiNotes?[currentIndex].note else {
                 print("Invalid note value.")
                 currentIndex += 1
-                playNextNote()
                 return
             }
 
@@ -54,14 +54,12 @@ class PianoViewModel : ObservableObject{
             guard let keyEntity = arView.scene.findEntity(named: noteName) else {
                 print("Failed to find the key entity for note: \(noteName).")
                 currentIndex += 1
-                playNextNote()
                 return
             }
 
             guard let modelEntity = keyEntity.getModelEntity() else {
                 print("Failed to find ModelEntity for note: \(noteName).")
                 currentIndex += 1
-                playNextNote()
                 return
             }
 
@@ -70,7 +68,7 @@ class PianoViewModel : ObservableObject{
             material.baseColor = .color(color)
             modelEntity.model?.materials[0] = material
 
-            let durationInSeconds = midiNotes?[currentIndex].duration.inSeconds ?? 1.0
+            let durationInSeconds = midiNotes?[currentIndex].duration.inSeconds ?? 0.0
             DispatchQueue.main.asyncAfter(deadline: .now() + durationInSeconds) {
                 var nextMaterial = SimpleMaterial()
                 let color = UIColor.clear // Set the desired color for the key
@@ -78,13 +76,9 @@ class PianoViewModel : ObservableObject{
                 modelEntity.model?.materials[0] = nextMaterial
 
                 currentIndex += 1
-                playNextNote()
             }
         }
-
-        playNextNote()
     }
-
 
     
     func dismissModal() {
@@ -94,9 +88,8 @@ class PianoViewModel : ObservableObject{
 }
 
 
-
+*/
 
 
   
-
 

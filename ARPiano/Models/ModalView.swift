@@ -32,7 +32,7 @@ struct ModalView: View {
                 Text("After you press the -Start playing- button, adjust virtual keyboard to your RL keyboard and press play. After 10 sec, proper keys will turn purple.")
                     .font(.footnote)
                     .italic()
-                    .padding()
+                    .padding(30)
                     .background(Color.gray)
                     .foregroundColor(.white)
                     .cornerRadius(10)

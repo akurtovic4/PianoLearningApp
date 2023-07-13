@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1C44A1EE2A3B335C004FA5BE /* MidiParser in Frameworks */ = {isa = PBXBuildFile; productRef = 1C44A1ED2A3B335C004FA5BE /* MidiParser */; };
-		1C44A1F02A3B5BEB004FA5BE /* proba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C44A1EF2A3B5BEB004FA5BE /* proba.swift */; };
-		1C44A1F22A3B68AE004FA5BE /* proba2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C44A1F12A3B68AE004FA5BE /* proba2.swift */; };
-		1C44A1F42A3B6F00004FA5BE /* proba3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C44A1F32A3B6F00004FA5BE /* proba3.swift */; };
 		1C44A1F62A3B7959004FA5BE /* easymid2.mid in Resources */ = {isa = PBXBuildFile; fileRef = 1C44A1F52A3B7958004FA5BE /* easymid2.mid */; };
 		1C65DF022A3774BF00D73EC1 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C65DF012A3774BF00D73EC1 /* ModalView.swift */; };
 		1C6909CA2A1539B6002944D2 /* Keyboard.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1C6909C92A1539B6002944D2 /* Keyboard.rcproject */; };
@@ -24,9 +21,6 @@
 		A0CEA86A2A0D94EE002D7FDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA8692A0D94EE002D7FDF /* ContentView.swift */; };
 		A0CEA86E2A0D94F2002D7FDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CEA86D2A0D94F2002D7FDF /* Assets.xcassets */; };
 		A0CEA8712A0D94F2002D7FDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CEA8702A0D94F2002D7FDF /* Preview Assets.xcassets */; };
-		A0CEA87B2A0D94F2002D7FDF /* ARPianoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA87A2A0D94F2002D7FDF /* ARPianoTests.swift */; };
-		A0CEA8852A0D94F2002D7FDF /* ARPianoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA8842A0D94F2002D7FDF /* ARPianoUITests.swift */; };
-		A0CEA8872A0D94F2002D7FDF /* ARPianoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA8862A0D94F2002D7FDF /* ARPianoUITestsLaunchTests.swift */; };
 		A0CEA89A2A0D98B1002D7FDF /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A0CEA8992A0D98B1002D7FDF /* Experience.rcproject */; };
 /* End PBXBuildFile section */
 
@@ -48,9 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C44A1EF2A3B5BEB004FA5BE /* proba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proba.swift; sourceTree = "<group>"; };
-		1C44A1F12A3B68AE004FA5BE /* proba2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proba2.swift; sourceTree = "<group>"; };
-		1C44A1F32A3B6F00004FA5BE /* proba3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proba3.swift; sourceTree = "<group>"; };
 		1C44A1F52A3B7958004FA5BE /* easymid2.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = easymid2.mid; sourceTree = "<group>"; };
 		1C65DF012A3774BF00D73EC1 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		1C6909C92A1539B6002944D2 /* Keyboard.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Keyboard.rcproject; sourceTree = "<group>"; };
@@ -66,10 +57,7 @@
 		A0CEA86D2A0D94F2002D7FDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0CEA8702A0D94F2002D7FDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A0CEA8762A0D94F2002D7FDF /* ARPianoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARPianoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0CEA87A2A0D94F2002D7FDF /* ARPianoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPianoTests.swift; sourceTree = "<group>"; };
 		A0CEA8802A0D94F2002D7FDF /* ARPianoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARPianoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0CEA8842A0D94F2002D7FDF /* ARPianoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPianoUITests.swift; sourceTree = "<group>"; };
-		A0CEA8862A0D94F2002D7FDF /* ARPianoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARPianoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A0CEA8992A0D98B1002D7FDF /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,9 +102,6 @@
 				1CEB07672A2784CD008EA2DC /* MidiFile.swift */,
 				1CEB07692A27873D008EA2DC /* PianoViewModel.swift */,
 				1C65DF012A3774BF00D73EC1 /* ModalView.swift */,
-				1C44A1EF2A3B5BEB004FA5BE /* proba.swift */,
-				1C44A1F12A3B68AE004FA5BE /* proba2.swift */,
-				1C44A1F32A3B6F00004FA5BE /* proba3.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -134,8 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				A0CEA8662A0D94EE002D7FDF /* ARPiano */,
-				A0CEA8792A0D94F2002D7FDF /* ARPianoTests */,
-				A0CEA8832A0D94F2002D7FDF /* ARPianoUITests */,
 				A0CEA8652A0D94EE002D7FDF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -173,23 +156,6 @@
 				A0CEA8702A0D94F2002D7FDF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A0CEA8792A0D94F2002D7FDF /* ARPianoTests */ = {
-			isa = PBXGroup;
-			children = (
-				A0CEA87A2A0D94F2002D7FDF /* ARPianoTests.swift */,
-			);
-			path = ARPianoTests;
-			sourceTree = "<group>";
-		};
-		A0CEA8832A0D94F2002D7FDF /* ARPianoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A0CEA8842A0D94F2002D7FDF /* ARPianoUITests.swift */,
-				A0CEA8862A0D94F2002D7FDF /* ARPianoUITestsLaunchTests.swift */,
-			);
-			path = ARPianoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,15 +299,12 @@
 			files = (
 				A0CEA86A2A0D94EE002D7FDF /* ContentView.swift in Sources */,
 				1CC1B67D2A37324F0021A3D7 /* MIDIConverter.swift in Sources */,
-				1C44A1F42A3B6F00004FA5BE /* proba3.swift in Sources */,
 				1CEB07652A2783C6008EA2DC /* Entity.swift in Sources */,
 				1CEB076A2A27873D008EA2DC /* PianoViewModel.swift in Sources */,
-				1C44A1F22A3B68AE004FA5BE /* proba2.swift in Sources */,
 				1C6909CA2A1539B6002944D2 /* Keyboard.rcproject in Sources */,
 				A0CEA8682A0D94EE002D7FDF /* AppDelegate.swift in Sources */,
 				1C65DF022A3774BF00D73EC1 /* ModalView.swift in Sources */,
 				1CEB07682A2784CD008EA2DC /* MidiFile.swift in Sources */,
-				1C44A1F02A3B5BEB004FA5BE /* proba.swift in Sources */,
 				A0CEA89A2A0D98B1002D7FDF /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +313,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0CEA87B2A0D94F2002D7FDF /* ARPianoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,8 +320,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0CEA8852A0D94F2002D7FDF /* ARPianoUITests.swift in Sources */,
-				A0CEA8872A0D94F2002D7FDF /* ARPianoUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

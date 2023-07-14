@@ -29,10 +29,10 @@ struct ModalView: View {
                     .padding()
                     .foregroundColor(Color.black)
                 
-                Text("After you press the -Start playing- button, adjust virtual keyboard to your RL keyboard and press play. After 10 sec, proper keys will turn purple.")
+                Text("After you press the -Start playing- button, adjust virtual keyboard to your RL keyboard and press play. After 10 sec, proper keys will be colored. First key will be gray so you can position your hand, 3 sec after that, the coloring will start")
                     .font(.footnote)
                     .italic()
-                    .padding(30)
+                    .padding()
                     .background(Color.gray)
                     .foregroundColor(.white)
                     .cornerRadius(10)
@@ -52,3 +52,4 @@ struct ModalView: View {
     
 }
    
+

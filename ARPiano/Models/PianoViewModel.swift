@@ -1,102 +1,171 @@
 //
-//
-//  ARPiano
-//
-//  Created by Amina Kurtović on 15. 6. 2023..
-//
-
-//
 //  PianoViewModel.swift
 //  ARPiano
 //
 //  Created by Amina Kurtović on 31. 5. 2023..
 //
 
-import Foundation
-import RealityKit
-import UIKit
-
-class PianoViewModel : ObservableObject{
-
-    @Published var isModalPresented = true
-    
+ import Foundation
+ import RealityKit
+ import UIKit
  
-    
-    func startTimer(arView: ARView) {
-        let midiNotes = MIDIConverter().loadMidi(fileName: "easymid2")
-        var currentIndex = 0
+ class PianoViewModel : ObservableObject{
+ 
+ @Published var isModalPresented = true
+ 
+     func startTimer(arView: ARView) {
+         guard let jsonData = MidiFile.getJSONData() else {
+             print("Failed to load JSON data.")
+             return
+         }
 
-        var numOfNotes = 0
-        if let notes = midiNotes {
-            numOfNotes = notes.endIndex
-        } else {
-            print("Failed to load MIDI notes.")
-            return
-        }
+         guard let firstNote = jsonData.notes.first else {
+             print("No notes found in the JSON data.")
+             return
+         }
 
-        func playNextNote() {
-            guard currentIndex < numOfNotes else {
-                print(midiNotes)
-                print("All key color changes completed.")
-                return
-            }
+         guard let keyEntity = arView.scene.findEntity(named: firstNote.name) else {
+             print("Failed to find the key entity for note: \(firstNote).")
+             return
+         }
 
-            guard let note = midiNotes?[currentIndex].note else {
-                print("Invalid note value.")
-                currentIndex += 1
-                playNextNote()
-                return
-            }
+         guard let modelEntity = keyEntity.getModelEntity() else {
+             print("Failed to find ModelEntity for note: \(firstNote).")
+             return
+         }
 
-            let noteName = String(note)
-            print("Aminaaa")
-            print(noteName)
-            guard let keyEntity = arView.scene.findEntity(named: noteName) else {
-                print("Failed to find the key entity for note: \(noteName).")
-                currentIndex += 1
-                playNextNote()
-                return
-            }
+         var material = SimpleMaterial()
+         let blueColor = UIColor.blue
+         material.baseColor = .color(.lightGray)
+         modelEntity.model?.materials[0] = material
 
-            guard let modelEntity = keyEntity.getModelEntity() else {
-                print("Failed to find ModelEntity for note: \(noteName).")
-                currentIndex += 1
-                playNextNote()
-                return
-            }
+         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+             material.baseColor = .color(.white)
 
-            var material = SimpleMaterial()
-            let color = UIColor.purple
-            material.baseColor = .color(color)
-            modelEntity.model?.materials[0] = material
+             var currentIndex = 0
 
-            let durationInSeconds = midiNotes?[currentIndex].duration.inSeconds ?? 1.0
-            DispatchQueue.main.asyncAfter(deadline: .now() + durationInSeconds) {
-                var nextMaterial = SimpleMaterial()
-                let color = UIColor.clear // Set the desired color for the key
-                nextMaterial.baseColor = .color(.white)
-                modelEntity.model?.materials[0] = nextMaterial
+             Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+                 guard currentIndex < jsonData.notes.count else {
+                     timer.invalidate()
+                     print("All key color changes completed.")
+                     return
+                 }
 
-                currentIndex += 1
-                playNextNote()
-            }
-        }
+                 let note = jsonData.notes[currentIndex]
 
-        playNextNote()
-    }
+                 guard let keyEntity = arView.scene.findEntity(named: note.name) else {
+                     print("Failed to find the key entity for note: \(note.name).")
+                     currentIndex += 1
+                     return
+                 }
 
+                 guard let modelEntity = keyEntity.getModelEntity() else {
+                     print("Failed to find ModelEntity for note: \(note.name).")
+                     currentIndex += 1
+                     return
+                 }
 
-    
-    func dismissModal() {
-           isModalPresented = false
-       }
-    
-}
+                 var material = SimpleMaterial()
+                 let color = UIColor.purple // Set the desired color for the key
+                 material.baseColor = .color(color)
+                 modelEntity.model?.materials[0] = material
 
+                 DispatchQueue.main.asyncAfter(deadline: .now() + note.duration) {
+                     var nextMaterial = SimpleMaterial()
+                     let color = UIColor.clear // Set the desired color for the key
+                     nextMaterial.baseColor = .color(.white)
+                     modelEntity.model?.materials[0] = nextMaterial
 
+                     currentIndex += 1
+                 }
+             }
+         }
+     }
 
-
-
+ 
+ 
+ 
+ func createMaterialColor(for noteName: String) -> UIColor {
+ // Map MIDI note names to colors
+ switch noteName {
+ case "C1":
+ return .red
+ case "D1":
+ return .green
+ case "E1":
+ return .blue
+ // Add more cases for other keys...
+ default:
+ return .purple
+ }
+ }
+ 
+ func dismissModal() {
+ isModalPresented = false
+ }
+ 
+ }
+ 
+ 
+ /*
+  prava
+  func changingColors(arView: ARView) {
+  guard let jsonData = MidiFile.getJSONData() else {
+  print("Failed to load JSON data.")
+  return
+  }
   
+  DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+  var currentIndex = 0
+  
+  Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+  guard currentIndex < jsonData.notes.count else {
+  timer.invalidate()
+  print("All key color changes completed.")
+  return
+  }
+  
+  let note = jsonData.notes[currentIndex]
+  
+  guard let keyEntity = arView.scene.findEntity(named: note.name) else {
+  print("Failed to find the key entity for note: \(note.name).")
+  currentIndex += 1
+  return
+  }
+  
+  guard let modelEntity = keyEntity.getModelEntity() else {
+  print("Failed to find ModelEntity for note: \(note.name).")
+  currentIndex += 1
+  return
+  }
+  
+  var material = SimpleMaterial()
+  let color = UIColor.purple // Set the desired color for the key
+  material.baseColor = .color(color)
+  modelEntity.model?.materials[0] = material
+  
+  DispatchQueue.main.asyncAfter(deadline: .now() + note.duration) {
+  var nextMaterial = SimpleMaterial()
+  let color = UIColor.clear // Set the desired color for the key
+  nextMaterial.baseColor = .color(color)
+  modelEntity.model?.materials[0] = nextMaterial
+  
+  //                    func changeTo(_ element: Int, _ color: UIColor) {
+  //                        modelEntity.model?.materials[0] = UnlitMaterial(color: color)
+  //                       }
+  //                    changeTo(currentIndex, .clear)//mesh c
+  //                  //  nextMaterial.baseColor = .color(.white)
+  //                    modelEntity.model?.materials[0] = nextMaterial
+  
+  currentIndex += 1
+  }
+  
+  
+  }
+  }
+  }
+  
+  
+ */
 
 
